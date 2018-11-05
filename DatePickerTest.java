@@ -10,16 +10,16 @@ public class DatePickerTest {
 
   public static void main(String[] args) throws Exception {
 
-    JFXPanel panel = new JFXPanel();
-    Group root = new Group();
+    JFXPanel jFXPanel = new JFXPanel();
+    Group group = new Group();
     DatePicker datePicker = new DatePicker(LocalDate.now());
-    root.getChildren().add(datePicker);
-    Scene scene = new Scene(root);
-    panel.setScene(scene);
-    JPanel jp = new JPanel();
-    jp.add(panel);
-    int res = JOptionPane.showConfirmDialog(null, panel, "Choose",
-                                            JOptionPane.OK_CANCEL_OPTION);//,
+    group.getChildren().add(datePicker);
+    Scene scene = new Scene(group);
+    jFXPanel.setScene(scene);
+    JPanel jPanel = new JPanel();
+    jPanel.add(jFXPanel);
+    int res = JOptionPane.showConfirmDialog(null, jPanel, "Choose",
+                                            JOptionPane.OK_CANCEL_OPTION);
     LocalDate localDate = datePicker.getValue();
     System.out.println(localDate);
   }
