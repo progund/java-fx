@@ -1,10 +1,9 @@
 import java.time.LocalDate;
+import javafx.embed.swing.JFXPanel;
+import javafx.scene.*;
 import javafx.scene.control.DatePicker;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import javafx.embed.swing.JFXPanel;
-
-import javafx.scene.*;
 
 public class DatePickerTest {
 
